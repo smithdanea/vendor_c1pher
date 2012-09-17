@@ -3,14 +3,14 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_VERSION_TAGS=release-keys USER=android-bui
 
 DATE = $(shell date +%h-%d-%y)
 
-ifneq ($(AOKP_BUILD),)
-	# AOKP_BUILD=<goo version int>/<build string>
-	PRODUCT_PROPERTY_OVERRIDES += \
-	    ro.goo.developerid=aokp \
-	    ro.goo.rom=aokp \
-	    ro.goo.version=$(shell echo $(AOKP_BUILD) | cut -d/ -f1) \
-		ro.aokp.version=$(TARGET_PRODUCT)_jb_$(shell echo $(AOKP_BUILD) | cut -d/ -f2)
-else ifneq ($(C1PHER_BUILD),)
+#ifneq ($(AOKP_BUILD),)
+#	# AOKP_BUILD=<goo version int>/<build string>
+#	PRODUCT_PROPERTY_OVERRIDES += \
+#	    ro.goo.developerid=aokp \
+#	    ro.goo.rom=aokp \
+#	    ro.goo.version=$(shell echo $(AOKP_BUILD) | cut -d/ -f1) \
+#		ro.aokp.version=$(TARGET_PRODUCT)_jb_$(shell echo $(AOKP_BUILD) | cut -d/ -f2)
+ifneq ($(C1PHER_BUILD),)
 	PRODUCT_PROPERTY_OVERRIDES += \
 		ro.aokp.version=$(TARGET_PRODUCT)_c1pher_$(C1PHER_BUILD)
 else
