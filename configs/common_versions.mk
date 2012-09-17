@@ -11,6 +11,10 @@ ifneq ($(AOKP_BUILD),)
 	    ro.goo.version=$(shell echo $(AOKP_BUILD) | cut -d/ -f1) \
 		ro.aokp.version=$(TARGET_PRODUCT)_jb_$(shell echo $(AOKP_BUILD) | cut -d/ -f2)
 else
+ifneq ($(C1PHER_BUILD),)
+	PRODUCT_PROPERTY_OVERRIDES += \
+		ro.aokp.version=$(TARGET_PRODUCT)_c1pher_$(C1PHER_BUILD)
+else
 	PRODUCT_PROPERTY_OVERRIDES += \
 		ro.aokp.version=$(TARGET_PRODUCT)_unofficial_$(DATE)
 endif

@@ -1,7 +1,5 @@
-Android Open Kang Project
+C1pher's fork of Android Open Kang Project
 =========================
-
-
 
 
 
@@ -12,7 +10,7 @@ Please see the [Android source page](http://source.android.com/source/index.html
 
 To initialize your local repository using my trees, use the following command:
 
-    repo init -u https://github.com/AOKP/platform_manifest.git -b jb
+    repo init -u https://github.com/smitdanea/platform_manifest.git -b jb
 
 Then to sync up:
 
@@ -38,6 +36,7 @@ You can also build a flashable zip with
     
 Special Thanks
 --------------
+Thanks to the Android Open Kang Project for the base. (http://github.com/AOKP)
 Huge shout out to [@peteralfonzo](http://twitter.com/peteralfonso) for his wonderfully clean vendor tree to use as a base. This makes this infinitely more oragnized and easier to work with. Thank him!
 
 

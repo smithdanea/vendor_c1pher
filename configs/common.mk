@@ -18,8 +18,8 @@ PRODUCT_PACKAGES += \
     PhaseBeam \
     ROMControl \
     SuperSU \
-    SwagPapers \
-    UnicornPorn
+#    SwagPapers \
+#    UnicornPorn
 
 # Use prebuilt su until fixed when built
 PRODUCT_COPY_FILES += \
