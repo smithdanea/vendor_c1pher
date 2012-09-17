@@ -1,10 +1,10 @@
-$(call inherit-product, vendor/aokp/configs/common.mk)
+$(call inherit-product, vendor/c1pher/configs/common.mk)
 
 PRODUCT_PACKAGES += \
     NovaLauncher
 
 # Inherit drm blobs
--include vendor/aokp/configs/common_drm_phone.mk
+-include vendor/c1pher/configs/common_drm_phone.mk
 
 # BT config
 PRODUCT_COPY_FILES += \

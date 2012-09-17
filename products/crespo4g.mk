@@ -2,10 +2,10 @@
 $(call inherit-product, device/samsung/crespo4g/full_crespo4g.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/aokp/configs/common_phone.mk)
+$(call inherit-product, vendor/c1pher/configs/common_phone.mk)
 
 # Setup device specific product configuration.
-PRODUCT_NAME := aokp_crespo4g
+PRODUCT_NAME := c1pher_crespo4g
 PRODUCT_BRAND := google
 PRODUCT_DEVICE := crespo4g
 PRODUCT_MODEL := Nexus S 4G
@@ -18,4 +18,4 @@ PRODUCT_PACKAGES += \
     Thinkfree
 
 PRODUCT_COPY_FILES += \
-    vendor/aokp/prebuilt/bootanimation/bootanimation_480_800.zip:system/media/bootanimation.zip
+    vendor/c1pher/prebuilt/bootanimation/bootanimation_480_800.zip:system/media/bootanimation.zip

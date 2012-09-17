@@ -2,16 +2,16 @@
 $(call inherit-product, device/samsung/vibrantmtd/full_vibrantmtd.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/aokp/configs/common_phone.mk)
+$(call inherit-product, vendor/c1pher/configs/common_phone.mk)
 
 # Inherit GSM common stuff
-$(call inherit-product, vendor/aokp/configs/gsm.mk)
+$(call inherit-product, vendor/c1pher/configs/gsm.mk)
 
 # Inherit Aries-common overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/aries-common
+PRODUCT_PACKAGE_OVERLAYS += vendor/c1pher/overlay/aries-common
 
 # Setup device specific product configuration.
-PRODUCT_NAME := aokp_vibrantmtd
+PRODUCT_NAME := c1pher_vibrantmtd
 PRODUCT_BRAND := samsung
 PRODUCT_DEVICE := vibrantmtd
 PRODUCT_MODEL := SGH-T959

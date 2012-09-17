@@ -15,28 +15,28 @@
 #
 
 ## Specify phone tech before including full_phone
-$(call inherit-product, vendor/aokp/configs/gsm.mk)
+$(call inherit-product, vendor/c1pher/configs/gsm.mk)
 
 # Release name
 PRODUCT_RELEASE_NAME := p5113
 
 PRODUCT_COPY_FILES += \
-    vendor/aokp/prebuilt/bootanimation/bootanimation_1280_800.zip:system/media/bootanimation.zip
+    vendor/c1pher/prebuilt/bootanimation/bootanimation_1280_800.zip:system/media/bootanimation.zip
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/espressowifi
+PRODUCT_PACKAGE_OVERLAYS += vendor/c1pher/overlay/espressowifi
 
 PRODUCT_PACKAGES += \
     NovaLauncher
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/aokp/configs/common_tablet.mk)
+$(call inherit-product, vendor/c1pher/configs/common_tablet.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/p5113/full_p5113.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := p5113
-PRODUCT_NAME := aokp_p5113
+PRODUCT_NAME := c1pher_p5113
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := GT-P5113
 PRODUCT_MANUFACTURER := samsung
