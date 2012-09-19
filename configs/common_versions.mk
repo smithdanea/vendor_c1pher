@@ -12,7 +12,7 @@ DATE = $(shell date +%h-%d-%y)
 #		ro.aokp.version=$(TARGET_PRODUCT)_jb_$(shell echo $(AOKP_BUILD) | cut -d/ -f2)
 ifneq ($(C1PHER_BUILD),)
 	PRODUCT_PROPERTY_OVERRIDES += \
-		ro.aokp.version=$(TARGET_PRODUCT)_c1pher_$(C1PHER_BUILD)
+		ro.aokp.version=$(TARGET_PRODUCT)_$(C1PHER_BUILD)
 else
 	PRODUCT_PROPERTY_OVERRIDES += \
 		ro.aokp.version=$(TARGET_PRODUCT)_unofficial_$(DATE)
