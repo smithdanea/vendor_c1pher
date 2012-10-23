@@ -21,7 +21,7 @@ $(call inherit-product, vendor/c1pher/configs/gsm.mk)
 PRODUCT_RELEASE_NAME := p3110
 
 PRODUCT_COPY_FILES += \
-    vendor/c1pher/prebuilt/bootanimation/bootanimation_1024_600.zip:system/media/bootanimation.zip
+    vendor/c1pher/prebuilt/bootanimation/bootanimation_1024_600_ccw90.zip:system/media/bootanimation.zip
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/c1pher/overlay/espressowifi
 
