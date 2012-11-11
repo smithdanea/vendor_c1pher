@@ -7,8 +7,8 @@ $(call inherit-product, vendor/c1pher/configs/common_phone.mk)
 # Inherit GSM common stuff
 $(call inherit-product, vendor/c1pher/configs/gsm.mk)
 
-# Inherit Aries-common overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/c1pher/overlay/aries-common
+# Inherit Fascinate overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/c1pher/overlay/fascinate
 
 # Setup device specific product configuration.
 PRODUCT_NAME := c1pher_fascinatemtd

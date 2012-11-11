@@ -23,6 +23,6 @@ add_lunch_combo c1pher_p3113-userdebug
 add_lunch_combo c1pher_p5100-userdebug
 add_lunch_combo c1pher_p5110-userdebug
 add_lunch_combo c1pher_p5113-userdebug
-add_lunch_combo c1pher_tf101-userdebug
 add_lunch_combo c1pher_quincyatt-userdebug
+add_lunch_combo c1pher_tf101-userdebug
 add_lunch_combo c1pher_vibrantmtd-userdebug
