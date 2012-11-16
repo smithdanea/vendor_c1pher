@@ -7,15 +7,6 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/c1pher/overlay/common
 include vendor/c1pher/configs/themes_common.mk
 
 PRODUCT_PACKAGES += \
-    AOKPtips \
-    AppWidgetPicker \
-    LatinImeDictionary \
-    Microbes \
-    MusicFX \
-    MusicVisualization \
-    NoiseField \
-    PhaseBeam \
-    ROMControl \
     SuperSU \
 #    SwagPapers \
 #    UnicornPorn
@@ -36,7 +27,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.kernel.android.checkjni=0
 
 PRODUCT_COPY_FILES += \
-    vendor/c1pher/prebuilt/common/lib/libmicrobes_jni.so:system/lib/libmicrobes_jni.so \
     vendor/c1pher/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml \
     vendor/c1pher/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf
 
